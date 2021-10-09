@@ -2,9 +2,11 @@
 
 ![fadeinandout](https://user-images.githubusercontent.com/66554164/136661686-8db06fea-8cbe-4faa-9ee2-12b898b4a5f9.png)
 
+---
+
 ## 근데 이제 UI/UX를 곁들인..
 
-ZUM Tech 블로그를 구경하다 사이트가 너무 이뻐서 클론해보았다. 정확히는 사이트의 fade in, fade out 동작 방식이 궁금해서 직접 만들었다.
+[ZUM Tech](https://zuminternet.github.io/) 블로그를 구경하다 사이트가 너무 이뻐서 클론해보았다. 정확히는 사이트의 fade in, fade out 동작 방식이 궁금해서 직접 만들었다.
 
 ## 궁금했던 동작 방식
 
@@ -72,3 +74,5 @@ article.setAttribute('style', `--i:${randomNum}`);
 - 동적으로 생성되는 클래스
 - 각기 다른 `animation-duration` 시간
 - 부드러운 애니메이션
+
+[사이트 보기](https://byungyeonkim.github.io/Fade-in-and-out/)
