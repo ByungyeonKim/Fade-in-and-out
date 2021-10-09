@@ -74,5 +74,8 @@ article.setAttribute('style', `--i:${randomNum}`);
 - 동적으로 생성되는 클래스
 - 각기 다른 `animation-duration` 시간
 - 부드러운 애니메이션
+- 최대한 간결한 태그 깊이
+  - 부스트코스에서 웹 UI를 배울 때 지적을 많이 받은 부분이 '불필요한 태그를 생성하지 말라'는 것이었다. 깊이가 깊을수록 유지보수가 어렵고 성능상 좋지 않다는 이유였다.
+  - 그래서 최대한 간결한 뎁스를 유지하도록 노력했다.
 
 [사이트 보기](https://byungyeonkim.github.io/Fade-in-and-out/)
