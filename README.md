@@ -1,12 +1,14 @@
 # Fade in, Fade out 구현하기
 
-![fadeinandout](https://user-images.githubusercontent.com/66554164/136661686-8db06fea-8cbe-4faa-9ee2-12b898b4a5f9.png)
+![fadeinandout](https://user-images.githubusercontent.com/66554164/136690015-dfb985a4-ffd1-44ac-9cf6-07b8d0666c99.png)
 
 ---
 
 ## 근데 이제 UI/UX를 곁들인..
 
 [ZUM Tech](https://zuminternet.github.io/) 블로그를 구경하다 사이트가 너무 이뻐서 클론해보았다. 정확히는 사이트의 fade in, fade out 동작 방식이 궁금해서 직접 만들었다.
+
+---
 
 ## 사용 기술
 
@@ -21,6 +23,8 @@
   - Media query
   - Pseudo-classes
 
+---
+
 ## 궁금했던 동작 방식
 
 줌 기술 블로그의 fade in, fade out은 첫화면에 노출되는 포스트는 그대로 보이고 스크롤을 내릴 때 다음 포스트들은 애니메이션이 작동된다. 자세히 살펴보니 첫화면에 노출된 포스트는 `shown`클래스가 생기며(화면의 크기에 따라 3개든 5개든 생김 = 동적이다) 스크롤을 일정크기만큼 내리면 포스트가 올라오며 `animate`클래스가 생성된다.
@@ -29,6 +33,8 @@
 2. 화면의 크기에 따라 첫화면에 노출된 포스트는 `shown`클래스 생성
 3. 첫화면에 노출되지 않은 포스트들은 스크롤 다운 시 `animate`클래스 생성
 4. `animate`클래스가 추가된 포스트는 `moveUp` 애니메이션 작동
+
+---
 
 ## 문제 해결
 
@@ -81,6 +87,8 @@ article.setAttribute('style', `--i:${randomNum}`);
 }
 ```
 
+---
+
 ## 신경쓴 부분
 
 - 모바일 반응(flex layout)
@@ -91,5 +99,4 @@ article.setAttribute('style', `--i:${randomNum}`);
 - 최대한 간결한 태그 깊이
   - 부스트코스에서 웹 UI를 배울 때 지적을 많이 받은 부분이 '불필요한 태그를 생성하지 말라'는 것이었다. 깊이가 깊을수록 유지보수가 어렵고 성능상 좋지 않다는 이유였다.
   - 그래서 최대한 간결한 뎁스를 유지하도록 노력했다.
-
-[사이트 보기](https://byungyeonkim.github.io/Fade-in-and-out/)
+- [사이트 보기](https://byungyeonkim.github.io/Fade-in-and-out/) 🌱
