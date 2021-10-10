@@ -8,6 +8,19 @@
 
 [ZUM Tech](https://zuminternet.github.io/) 블로그를 구경하다 사이트가 너무 이뻐서 클론해보았다. 정확히는 사이트의 fade in, fade out 동작 방식이 궁금해서 직접 만들었다.
 
+## 사용 기술
+
+- JavaScript
+  - ES6
+  - IntersectionObserver API
+  - Math built-in object
+- HTML
+  - Semantic tag
+- CSS
+  - Animation
+  - Media query
+  - Pseudo-classes
+
 ## 궁금했던 동작 방식
 
 줌 기술 블로그의 fade in, fade out은 첫화면에 노출되는 포스트는 그대로 보이고 스크롤을 내릴 때 다음 포스트들은 애니메이션이 작동된다. 자세히 살펴보니 첫화면에 노출된 포스트는 `shown`클래스가 생기며(화면의 크기에 따라 3개든 5개든 생김 = 동적이다) 스크롤을 일정크기만큼 내리면 포스트가 올라오며 `animate`클래스가 생성된다.
@@ -72,6 +85,7 @@ article.setAttribute('style', `--i:${randomNum}`);
 
 - 모바일 반응(flex layout)
 - 동적으로 생성되는 클래스
+  - 동적으로 클래스가 생성되기 때문에 첫화면이 위에 있든 아래에 있든(아래에서 새로고침 시) 애니메이션이 구현된다.
 - 각기 다른 `animation-duration` 시간
 - 부드러운 애니메이션
 - 최대한 간결한 태그 깊이
